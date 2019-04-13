@@ -8,12 +8,42 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
+    @IBOutlet var photoImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    @IBAction func onTappedCameraButton() {
+        presentPickerController(sourceType: .camera)
+    }
+    
+    @IBAction func onTappedAlbumButton() {
+        presentPickerController(sourceType: .photoLibrary)
+    }
+    
+    //カメラ，アルバムの呼び出しメソッド
+    func presentPickerController(sourceType: UIImagePickerController.SourceType) {
+        if UIImagePickerController.isSourceTypeAvailable(sourceType) {
+            let picker = UIImagePickerController()
+            picker.sourceType = sourceType
+            picker.delegate = self
+            self.present(picker, animated: true, completion: nil)
+        }
+    }
+    //写真が選択されたときに呼ばれるメソッド
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        self.dismiss(animated: true, completion: nil)
+        photoImageView.image = info[.originalImage] as? UIImage //画像を出力
+    }
+    
+    
 
 
 }
