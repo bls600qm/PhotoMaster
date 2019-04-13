@@ -90,6 +90,22 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         return newImage!
     }
+    //画像がなかった時のために　テキスト
+    @IBAction func onTappedTextButton() {
+        if photoImageView.image != nil {
+            photoImageView.image = drawText(image: photoImageView.image!)
+        } else {
+            print("画像がありません")
+        }
+    }
+     //画像がなかった時のために いらすと
+    @IBAction func onTappedIllustButton() {
+        if photoImageView.image != nil {
+            photoImageView.image = drawMaskImage(image: photoImageView.image!)
+        } else {
+            print("画像がありません")
+        }
+    }
 
 
 }
