@@ -14,6 +14,7 @@
 		97291F222261CA1D00F4AF9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97291F202261CA1D00F4AF9D /* LaunchScreen.storyboard */; };
 		97291F2D2261CA1D00F4AF9D /* PhotoMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97291F2C2261CA1D00F4AF9D /* PhotoMasterTests.swift */; };
 		97291F382261CA1D00F4AF9D /* PhotoMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97291F372261CA1D00F4AF9D /* PhotoMasterUITests.swift */; };
+		97291F462261D02200F4AF9D /* sakura.png in Resources */ = {isa = PBXBuildFile; fileRef = 97291F452261D02200F4AF9D /* sakura.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		97291F332261CA1D00F4AF9D /* PhotoMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97291F372261CA1D00F4AF9D /* PhotoMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMasterUITests.swift; sourceTree = "<group>"; };
 		97291F392261CA1D00F4AF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97291F452261D02200F4AF9D /* sakura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sakura.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		97291F162261CA1B00F4AF9D /* PhotoMaster */ = {
 			isa = PBXGroup;
 			children = (
+				97291F452261D02200F4AF9D /* sakura.png */,
 				97291F172261CA1B00F4AF9D /* AppDelegate.swift */,
 				97291F192261CA1B00F4AF9D /* ViewController.swift */,
 				97291F1B2261CA1B00F4AF9D /* Main.storyboard */,
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97291F462261D02200F4AF9D /* sakura.png in Resources */,
 				97291F222261CA1D00F4AF9D /* LaunchScreen.storyboard in Resources */,
 				97291F1F2261CA1D00F4AF9D /* Assets.xcassets in Resources */,
 				97291F1D2261CA1B00F4AF9D /* Main.storyboard in Resources */,
