@@ -106,6 +106,16 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             print("画像がありません")
         }
     }
+    //アップロードボタンを押した時に呼ばれるメソッド
+    @IBAction func onTappedUploadButton() {
+        if photoImageView.image != nil {
+            //共有するあいてむを設定
+            let activityVC = UIActivityViewController(activityItems: [photoImageView.image!, "#PhotoMaster"], applicationActivities: nil)
+            self.present(activityVC, animated: true, completion: nil)
+        } else {
+            print("画像がありません")
+        }
+    }
 
 
 }
